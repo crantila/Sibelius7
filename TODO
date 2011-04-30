@@ -1,0 +1,12 @@
+-Adjust the orchestration
+  -remove unneeded instruments
+  -add additional instruments
+  -update LilyPond version
+-Remove Beethoven information and input Sibelius metadata
+  -<list of files goes here>
+-Input score
+  -<list of steps and files goes here>
+-Check for errors
+  -<list of steps and files goes here>
+-Optimize visually
+  -<list of steps and files goes here>
