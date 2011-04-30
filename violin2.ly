@@ -6,8 +6,5 @@
 instrument = "Violin II"
 
 notesMvtI = \violinTwoMvtI
-notesMvtII = \violinTwoMvtII
-notesMvtIII = \violinTwoMvtIII
-notesMvtIV = \violinTwoMvtIV
 
 \include "part.ily"

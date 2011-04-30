@@ -1,12 +1,19 @@
--Adjust the orchestration
+DONE: Adjust the orchestration
   DONE: add additional instruments (with only one movement, but naming undefined)
     DONE: add 1 trumpet
     DONE: add horn 4
     DONE: add 3 trombones
+    NB: I decided to keep the string parts all together, so I'll have to add extra staves as needed
   DONE: update LilyPond version (to 2.12.3)
-  -change number of movements to one
+  DONE: change number of movements to one
+  DONE: re-adjust the new parts, so that their notes are called "\notesMvtI"
+
+
 -Remove Beethoven information and input Sibelius metadata
   -change instrument names to Italian
+  -inspect "defs.ily" to see what could be useful, and what would screw me up
+  -check proper instrument-family grouping in the full score
+  -ensure the "score.ly" part compiles correctly
   -<list of files goes here>
 -Input score
   -<list of steps and files goes here>

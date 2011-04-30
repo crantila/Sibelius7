@@ -6,8 +6,5 @@
 instrument = "Timpani"
 
 notesMvtI = \timpaniMvtI
-notesMvtII = \timpaniMvtII
-notesMvtIII = \timpaniMvtIII
-notesMvtIV = \timpaniMvtIV
 
 \include "part.ily"

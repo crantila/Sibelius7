@@ -6,8 +6,5 @@
 instrument = "Bassoon I"
 
 notesMvtI = \bassoonOneMvtI
-notesMvtII = \bassoonOneMvtII
-notesMvtIII = \bassoonOneMvtIII
-notesMvtIV = \bassoonOneMvtIV
 
 \include "part.ily"

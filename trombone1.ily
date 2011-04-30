@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-tromboneOne = \relative c''
+tromboneOneMvtI = \relative c''
 {
   \transpositionPrint ees
   c4-.\f r r |
