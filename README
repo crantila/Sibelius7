@@ -1,0 +1,25 @@
+Musical Information:
+--------------------
+This is the score to Jean Sibelius' seventh symphony.
+
+Copyright Information:
+----------------------
+This score was copied from the Wilhelm Hansen pocket score version of the symphony. This score belongs in the public domain in Canada, where I live. The source code for this version of the score is released under the Creative Commons CC-BY-SA version 3.0 licence.
+
+Other Information:
+------------------
+Please send all comments and error reports to <crantila@fedoraproject.org>
+
+For latest source see: http://github.com/crantila/sibelius7/tree/master
+
+Building the Score:
+-------------------
+To build full score:
+> lilypond score<Movement>.ly
+
+To build individual part:
+> lilypond <name of part>.ly
+
+Attribution:
+------------
+The source code started as a modified version of the score of Beethoven's 3rd symphony, as prepared by hornguy77. See <http://github.com/horndude77/open-scores>
