@@ -1,17 +1,12 @@
 -Adjust the orchestration
-  -remove unneeded instruments
-  -add additional instruments
-    -add 1 trumpet
-    -add horn 4
-    -add 3 trombones
-    -add 1 violin1 part
-    -add 1 violin2 part
-    -add 1 viola part
-    -add cello part
-  -update LilyPond version (to 2.12.3)
+  DONE: add additional instruments (with only one movement, but naming undefined)
+    DONE: add 1 trumpet
+    DONE: add horn 4
+    DONE: add 3 trombones
+  DONE: update LilyPond version (to 2.12.3)
+  -change number of movements to one
 -Remove Beethoven information and input Sibelius metadata
   -change instrument names to Italian
-  -change number of movements to one
   -<list of files goes here>
 -Input score
   -<list of steps and files goes here>
