@@ -25,7 +25,7 @@
   >>
  
 %}
-\version "2.13.53"
+\version "2.12.3"
 
 #(define (rest-score r)
   (let ((score 0)

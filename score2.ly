@@ -1,4 +1,4 @@
-\version "2.13.53"
+\version "2.12.3"
 
 \include "merge-rests.ily"
 \include "defs.ily"
