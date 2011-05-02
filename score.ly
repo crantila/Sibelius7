@@ -56,11 +56,11 @@ instrument = "Orchestra"
   \score
   {
     <<
-      \new StaffGroup
+      \new StaffGroup %% Woodwinds
       <<
         \new Staff
         {
-          \set Staff.instrumentName = "Flutes"
+          \set Staff.instrumentName = "2 Flauti"
           \set Staff.shortInstrumentName = "Fl."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \fluteOneMvtI}
@@ -69,7 +69,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrumentName = "Oboes"
+          \set Staff.instrumentName = "2 Oboi"
           \set Staff.shortInstrumentName = "Ob."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \oboeOneMvtI}
@@ -78,9 +78,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrumentName = \markup {
-            \column { "Clarinets"
-                      \line { "in B" \smaller \flat} } }
+          \set Staff.instrumentName = "2 Clarinetti in B"
           \set Staff.shortInstrumentName = "Cl."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \clarinetOneMvtI}
@@ -89,86 +87,87 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrumentName = "Bassoons"
-          \set Staff.shortInstrumentName = "Bs."
+          \set Staff.instrumentName = "2 Fagotti"
+          \set Staff.shortInstrumentName = "Fg."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \bassoonOneMvtI}
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \bassoonTwoMvtI}
           >>
         }
       >>
-      \new StaffGroup
+      \new StaffGroup %% Brasswinds
       <<
         \new Staff
         {
-          \set Staff.instrumentName = \markup {
-            \column { "Horns I,II"
-                      \line { "in E" \smaller \flat} } }
-          \set Staff.shortInstrumentName = "Hn."
+          \set Staff.instrumentName = "4 Corni in F"
+          \set Staff.shortInstrumentName = "Cr."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \hornOneMvtI}
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \hornTwoMvtI}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \hornThreeMvtI}
+            \new Voice {\voiceFour \dynamicDown \keepWithTag #'score \hornFourMvtI}
           >>
         }
         \new Staff
         {
-          \set Staff.instrumentName = \markup {
-            \column { "Horn III"
-                      \line { "in E" \smaller \flat} } }
-          \set Staff.shortInstrumentName = "Hn.III"
-          \hornThreeMvtI
-        }
-        \new Staff
-        {
-          \set Staff.instrumentName = \markup {
-            \column { "Trumpets"
-                      \line { "in E" \smaller \flat} } }
-          \set Staff.shortInstrumentName = "Tr."
+          \set Staff.instrumentName = "3 Trombe in B"
+          \set Staff.shortInstrumentName = "Tro."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \trumpetOneMvtI}
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \trumpetTwoMvtI}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \trumpetThreeMvtI}
+          >>
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "3 Tromboni"
+          \set Staff.shortInstrumentName = "Tbn."
+          <<
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \tromboneOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \tromboneTwoMvtI}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \tromboneThreeMvtI}
           >>
         }
       >>
-      \new Staff
+      \new Staff %% Timpani (not in a group)
       {
         \set Staff.instrumentName = "Timpani"
-        \set Staff.shortInstrumentName = "Ti."
+        \set Staff.shortInstrumentName = "Tmp."
         \timpaniMvtI
       }
-      \new StaffGroup
+      \new StaffGroup %% Strings
       <<
         \new GrandStaff
         <<
           \new Staff
           {
-            \set Staff.instrumentName = "Violin I"
+            \set Staff.instrumentName = "Violino I"
             \set Staff.shortInstrumentName = "Vl.I"
             \violinOneMvtI
           }
           \new Staff
           {
-            \set Staff.instrumentName = "Violin II"
+            \set Staff.instrumentName = "Violino II"
             \set Staff.shortInstrumentName = "Vl.II"
             \violinTwoMvtI
           }
         >>
         \new Staff
         {
-          \set Staff.instrumentName = "Viola"
-          \set Staff.shortInstrumentName = "Va."
+          \set Staff.instrumentName = "Alti"
+          \set Staff.shortInstrumentName = "Alti."
           \violaMvtI
         }
         \new Staff
         {
-          \set Staff.instrumentName = "Cello"
-          \set Staff.shortInstrumentName = "Vc."
+          \set Staff.instrumentName = "Celli"
+          \set Staff.shortInstrumentName = "Cel."
           \celloMvtI
         }
         \new Staff
         {
-          \set Staff.instrumentName = "Bass"
-          \set Staff.shortInstrumentName = "Cb."
+          \set Staff.instrumentName = "Bassi"
+          \set Staff.shortInstrumentName = "Bas."
           << \bassMvtI \outlineMvtI >>
         }
       >>
@@ -177,7 +176,8 @@ instrument = "Orchestra"
     \layout { }
   }
   
-  \score
+  %{
+  \score %% This only builds MIDI
   {
     \unfoldTremolos
     <<
@@ -249,4 +249,5 @@ instrument = "Orchestra"
     >>
     \midi { }
   }
+  %}
 }
