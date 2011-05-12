@@ -1,7 +1,7 @@
 \version "2.12.3"
 
 %define movement names.
-MvtI = ""
+Symph = ""
 
 % tremolo functions
 #(define (tremolo-repeat-count dur music)
@@ -144,7 +144,7 @@ rMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \box \bold $markp }
 #})
 
-rehearsalMarksMvtI =
+rehearsalMarksSymph =
 {
   s2.*4 |
   \repeat volta 2
@@ -225,8 +225,8 @@ rehearsalMarksMvtI =
   s2.*19 |
 }
 
-outlineMvtI =
-<< \rehearsalMarksMvtI
+outlineSymph =
+<< \rehearsalMarksSymph
 {
   \time 3/4
   \tempo "Allegro con brio" 2.=60

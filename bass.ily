@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-bassMvtI = \relative c
+bassSymph = \relative c
 {
   \key ees \major
   \clef bass

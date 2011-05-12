@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-celloMvtI = \relative c
+celloSymph = \relative c
 {
   \key ees \major
   \clef bass

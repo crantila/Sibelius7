@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-trumpetTwoMvtI = \relative c'
+trumpetTwoSymph = \relative c'
 {
   \time 3/4
   \key c \major

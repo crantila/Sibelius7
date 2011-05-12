@@ -5,6 +5,6 @@
 
 instrument = "Timpani"
 
-notesMvtI = \timpaniMvtI
+notesMvtI = \timpaniSymph
 
 \include "part.ily"

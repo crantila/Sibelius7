@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-violaMvtI = \relative c'
+violaSymph = \relative c'
 {
   \time 3/4
   \key ees \major

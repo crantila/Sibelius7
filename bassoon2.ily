@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-bassoonTwoMvtI = \relative c
+bassoonTwoSymph = \relative c
 {
   \time 3/4
   \key ees \major

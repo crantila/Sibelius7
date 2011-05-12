@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-hornOneMvtI = \relative c''
+hornOneSymph = \relative c''
 {
   \transpositionPrint ees
   c4-.\f r r |

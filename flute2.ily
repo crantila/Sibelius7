@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-fluteTwoMvtI = \relative c'''
+fluteTwoSymph = \relative c'''
 {
   \time 3/4
   \key ees \major

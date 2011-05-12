@@ -5,6 +5,6 @@
 
 instrument = "Horn I"
 
-notesMvtI = \hornOneMvtI
+notesMvtI = \hornOneSymph
 
 \include "part.ily"

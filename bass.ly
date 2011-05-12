@@ -5,6 +5,6 @@
 
 instrument = "Bass"
 
-notesMvtI = \bassMvtI
+notesMvtI = \bassSymph
 
 \include "part.ily"

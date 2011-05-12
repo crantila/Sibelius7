@@ -7,8 +7,8 @@
   {
     \new Staff
     {
-      << \keepWithTag #'part \notesMvtI \outlineMvtI >>
+      << \keepWithTag #'part \notesSymph \outlineSymph >>
     }
-    \header { piece = \MvtI }
+    \header { piece = \Symph }
   }
 }

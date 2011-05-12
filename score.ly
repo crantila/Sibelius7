@@ -63,8 +63,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "2 Flauti"
           \set Staff.shortInstrumentName = "Fl."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \fluteOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \fluteTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \fluteOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \fluteTwoSymph}
           >>
         }
         \new Staff
@@ -72,8 +72,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "2 Oboi"
           \set Staff.shortInstrumentName = "Ob."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \oboeOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \oboeTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \oboeOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \oboeTwoSymph}
           >>
         }
         \new Staff
@@ -81,8 +81,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "2 Clarinetti in B"
           \set Staff.shortInstrumentName = "Cl."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \clarinetOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \clarinetTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \clarinetOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \clarinetTwoSymph}
           >>
         }
         \new Staff
@@ -90,8 +90,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "2 Fagotti"
           \set Staff.shortInstrumentName = "Fg."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \bassoonOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \bassoonTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \bassoonOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \bassoonTwoSymph}
           >>
         }
       >>
@@ -102,10 +102,10 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "4 Corni in F"
           \set Staff.shortInstrumentName = "Cr."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \hornOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \hornTwoMvtI}
-            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \hornThreeMvtI}
-            \new Voice {\voiceFour \dynamicDown \keepWithTag #'score \hornFourMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \hornOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \hornTwoSymph}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \hornThreeSymph}
+            \new Voice {\voiceFour \dynamicDown \keepWithTag #'score \hornFourSymph}
           >>
         }
         \new Staff
@@ -113,9 +113,9 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "3 Trombe in B"
           \set Staff.shortInstrumentName = "Tro."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \trumpetOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \trumpetTwoMvtI}
-            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \trumpetThreeMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \trumpetOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \trumpetTwoSymph}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \trumpetThreeSymph}
           >>
         }
         \new Staff
@@ -123,9 +123,9 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "3 Tromboni"
           \set Staff.shortInstrumentName = "Tbn."
           <<
-            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \tromboneOneMvtI}
-            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \tromboneTwoMvtI}
-            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \tromboneThreeMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \tromboneOneSymph}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \tromboneTwoSymph}
+            \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \tromboneThreeSymph}
           >>
         }
       >>
@@ -133,7 +133,7 @@ instrument = "Orchestra"
       {
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Tmp."
-        \timpaniMvtI
+        \timpaniSymph
       }
       \new StaffGroup %% Strings
       <<
@@ -143,41 +143,41 @@ instrument = "Orchestra"
           {
             \set Staff.instrumentName = "Violino I"
             \set Staff.shortInstrumentName = "Vl.I"
-            \violinOneMvtI
+            \violinOneSymph
           }
           \new Staff
           {
             \set Staff.instrumentName = "Violino II"
             \set Staff.shortInstrumentName = "Vl.II"
-            \violinTwoMvtI
+            \violinTwoSymph
           }
         >>
         \new Staff
         {
           \set Staff.instrumentName = "Alti"
           \set Staff.shortInstrumentName = "Alti."
-          \violaMvtI
+          \violaSymph
         }
         \new Staff
         {
           \set Staff.instrumentName = "Celli"
           \set Staff.shortInstrumentName = "Cel."
-          \celloMvtI
+          \celloSymph
         }
         \new Staff
         {
           \set Staff.instrumentName = "Bassi"
           \set Staff.shortInstrumentName = "Bas."
-          << \bassMvtI \outlineMvtI >>
+          << \bassSymph \outlineSymph >>
         }
       >>
     >>
-    \header { piece = \MvtI }
+    \header { piece = \Symph }
     \layout { }
   }
   
   %{
-  \score %% This only builds MIDI
+  \score %% This only builds MIDI -- IT'S ALSO BROKEN BECAUSE IT SAYS "MvtI" INSTEAD OF "Symph"
   {
     \unfoldTremolos
     <<

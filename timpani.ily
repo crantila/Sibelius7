@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-timpaniMvtI = \relative c
+timpaniSymph = \relative c
 {
   \time 3/4
   \key ees \major

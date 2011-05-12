@@ -1,6 +1,6 @@
 \version "2.12.3"
 
-clarinetOneMvtI = \relative c''
+clarinetOneSymph = \relative c''
 {
   \transposition bes
   \key f \major

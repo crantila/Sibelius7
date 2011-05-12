@@ -11,11 +11,11 @@ DONE: Adjust the orchestration
 
 -Remove Beethoven information and input Sibelius metadata
   DONE: change instrument names to German
-  -change all occurrences of "MvtI" to "Symph"
+  DONE: change all occurrences of "MvtI" to "Symph"
   -inspect "defs.ily" to see what could be useful, and what would screw me up
   -check proper instrument-family grouping in the full score
+  -revise "header.ly"  
   -change "score.ly" part  and ensure it compiles correctly
-  -<list of files goes here>
 -Input score
   -<list of steps and files goes here>
 -Check for errors
