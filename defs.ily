@@ -271,17 +271,8 @@ largamenteMolto = {
   \mark \markup "Largamente molto"
 }
 
-%{
-rehearsalMarksSymph =
-{
-  s1.*12 |
-  \mark \default
-  
-}
-%}
-
 outlineSymph =
-<< % \rehearsalMarksSymph
+<<
 {
   \set Score.markFormatter = #format-mark-box-alphabet %% to include the letter "I" as a rehearsal mark
   %\set Score.markFormatter = #format-mark-box-numbers %% to put rehearsal marks in rectangles
@@ -375,22 +366,12 @@ afterGraceFraction = #(cons 15 16)
   \context
   {
     \Score
-    skipBars = ##t
-    extraNatural = ##f
-    \override PaperColumn #'keep-inside-line = ##t
-    \override NonMusicalPaperColumn #'keep-inside-line = ##t
-    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
-                               ,(make-accidental-rule 'any-octave 0)
-                               ,(make-accidental-rule 'same-octave 1))
+    % skipBars = ##t
+    % extraNatural = ##f
+    % \override PaperColumn #'keep-inside-line = ##t
+    % \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    % autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0), (make-accidental-rule 'any-octave 0), (make-accidental-rule 'same-octave 1))
   }
-
-  \context
-  {
-    \Voice
-    \override DynamicTextSpanner #'font-size = #0
-  }
-  
-  
   
   \context
   {
@@ -398,19 +379,10 @@ afterGraceFraction = #(cons 15 16)
   }
 }
 
-\midi
-{
-  \context
-  {
-    \Voice
-    \remove "Dynamic_performer"
-  }
-}
-
 \paper
 {
-  ragged-right = ##f
-  ragged-last = ##f
-  ragged-bottom = ##f
-  ragged-last-bottom = ##f
+  % ragged-right = ##f
+  % ragged-last = ##f
+  % ragged-bottom = ##f
+  % ragged-last-bottom = ##f
 }

@@ -15,19 +15,43 @@ DONE: Adjust the orchestration
   DONE: inspect "defs.ily" to see what could be useful, and what would screw me up
     DONE: change the "outline" to include rehearsal marks and tempo markings as appropriate
     DONE: figure out how to make the rehearsal marks use the letter "I"
-	  \set Score.markFormatter = #format-mark-alphabet
     DONE: find out how to make an O-umlaut rehearsal mark
     DONE: find the 6/4 marking before score page 29; input to "defs.ily"
   DONE: revise "header.ly"
   DONE: change "score.ly" part  and ensure it compiles correctly
   DONE: remove old notes from parts
-  -error-check that all parts are correct as follows:
-    -rehearsal marks (including "I" and "O-umlaut"
-    -tempo changes
-    -metre changes
-    -check proper instrument-family grouping in the full score
+  DONE: error-check that all parts are correct as follows:
+    DONE: rehearsal marks (including "I" and "O-umlaut"
+    DONE: tempo changes
+    DONE: metre changes
+    DONE: check proper instrument-family grouping in the full score
 -Input score
-  -<list of steps and files goes here>
+  -develop a solution where the tempo changes don't use \mark command, so they don't conflict with rehearsal marks; nice to use a function
+  -change the "cut time" marks to read "2/2"
+  -input bass
+  -input cello
+  -input viola
+  -input violin2
+  -input violin1
+  -input timpani
+  -input trombone3
+  -input trombone2
+  -input trombone1
+  -input trumpet3
+  -input trumpet2
+  -input trumpet1
+  -input horn4
+  -input horn3
+  -input horn2
+  -input horn1
+  -input bassoon2
+  -input bassoon1
+  -input clarinet2
+  -input clarinet1
+  -input oboe2
+  -input oboe1
+  -input flute2
+  -input flute1
 -Check for errors
   -<list of steps and files goes here>
 -Optimize visually
