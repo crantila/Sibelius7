@@ -3,7 +3,7 @@
 clarinetOneSymph = \relative c''
 {
   \transposition bes
-  \key f \major
+  \key d \major
   
   
 }

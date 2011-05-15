@@ -137,21 +137,18 @@ instrument = "Orchestra"
       }
       \new StaffGroup %% Strings
       <<
-        \new GrandStaff
-        <<
-          \new Staff
-          {
-            \set Staff.instrumentName = "Violino I"
-            \set Staff.shortInstrumentName = "Vl.I"
-            \violinOneSymph
-          }
-          \new Staff
-          {
-            \set Staff.instrumentName = "Violino II"
-            \set Staff.shortInstrumentName = "Vl.II"
-            \violinTwoSymph
-          }
-        >>
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violino I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \violinOneSymph
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violino II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \violinTwoSymph
+        }
         \new Staff
         {
           \set Staff.instrumentName = "Alti"

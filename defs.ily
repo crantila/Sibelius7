@@ -283,8 +283,8 @@ rehearsalMarksSymph =
 outlineSymph =
 << % \rehearsalMarksSymph
 {
-  \set Score.markFormatter = #format-mark-alphabet %% to include the letter "I" as a rehearsal mark
-  \set Score.markFormatter = #format-mark-box-numbers %% to put rehearsal marks in rectangles
+  \set Score.markFormatter = #format-mark-box-alphabet %% to include the letter "I" as a rehearsal mark
+  %\set Score.markFormatter = #format-mark-box-numbers %% to put rehearsal marks in rectangles
   
   \time 3/2
   \adagio %\tempo "Adagio" 4=70
@@ -361,7 +361,7 @@ outlineSymph =
   s1.*3 | % pg.72
   s1.*3 \mark \default \largamenteMolto s1. | % pg.73 -- Z
   s1.*9 \affettuoso s1.*3 | % pg.74
-  s1.*3 \mark "Ö" s1.*5 | % pg.75 -- Ö
+  s1.*3 \mark \markup{\box"Ö"} s1.*5 | % pg.75 -- Ö
   s1.*5 \tempoI s1.*4 | % pg.76
   
   \bar "|."

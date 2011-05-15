@@ -3,7 +3,7 @@
 trumpetOneSymph = \relative c''
 {
   \key c \major
-  \transpositionPrint ees
+  \transpositionPrint bes
   
   %% What's the transposition?
 }

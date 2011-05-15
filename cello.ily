@@ -2,7 +2,7 @@
 
 celloSymph = \relative c
 {
-  \key ees \major
+  \key c \major
   \clef bass
   
   

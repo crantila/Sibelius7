@@ -2,7 +2,7 @@
 
 hornThreeSymph = \relative c''
 {
-  \transpositionPrint d
+  \transpositionPrint f
   
   
 }
