@@ -12,10 +12,20 @@ DONE: Adjust the orchestration
 -Remove Beethoven information and input Sibelius metadata
   DONE: change instrument names to German
   DONE: change all occurrences of "MvtI" to "Symph"
-  -inspect "defs.ily" to see what could be useful, and what would screw me up
-  -check proper instrument-family grouping in the full score
-  -revise "header.ly"  
-  -change "score.ly" part  and ensure it compiles correctly
+  DONE: inspect "defs.ily" to see what could be useful, and what would screw me up
+    DONE: change the "outline" to include rehearsal marks and tempo markings as appropriate
+    DONE: figure out how to make the rehearsal marks use the letter "I"
+	  \set Score.markFormatter = #format-mark-alphabet
+    DONE: find out how to make an O-umlaut rehearsal mark
+    DONE: find the 6/4 marking before score page 29; input to "defs.ily"
+  DONE: revise "header.ly"
+  DONE: change "score.ly" part  and ensure it compiles correctly
+  DONE: remove old notes from parts
+  -error-check that all parts are correct as follows:
+    -rehearsal marks (including "I" and "O-umlaut"
+    -tempo changes
+    -metre changes
+    -check proper instrument-family grouping in the full score
 -Input score
   -<list of steps and files goes here>
 -Check for errors

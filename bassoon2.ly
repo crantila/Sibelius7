@@ -5,6 +5,6 @@
 
 instrument = "Bassoon II"
 
-notesMvtI = \bassoonTwoSymph
+notesSymph = \bassoonTwoSymph
 
 \include "part.ily"

@@ -2,23 +2,24 @@
 
 \header
 {
-  title = \markup{Symphony No. 3 in E\flat Major}
-  subtitle = "Eroica"
-  opus = "Op.55"
-  composer = "Ludwig van Beethoven (1770-1827)"
+  title = "Symphony Nr. 7"
+  subtitle = "In einem Satze"
+  opus = "Op. 105"
+  composer = "Jean Sibelius"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
   instrument = \instrument
 
-  mutopiatitle = "Symphony No.3 in Eb Major (Eroica)"
-  mutopiacomposer = "BeethovenLv"
-  mutopiaopus = "Op.55"
+  %{
+  mutopiatitle = "Symphony Nr. 7"
+  mutopiacomposer = "SibeliusJ"
+  mutopiaopus = "Op.105"
   mutopiainstrument = "Orchestra"
-  date = "1805"
-  source = "Braunschweig: Henry Litolff's Verlag, n.d.(ca.1865)"
+  date = "1924"
+  source = "??????????????"
   style = "Classical"
-  maintainer = "Jay Anderson"
-  maintainerEmail = "horndude77@gmail.com"
-  lastupdated = "2011/March/7"
+  maintainer = "Christopher Antila"
+  maintainerEmail = "crantila@fedoraproject.org"
+  lastupdated = "2011/?????????????????????"
   footer = "Mutopia-2009/06/04-1655"
   tagline =
   \markup
@@ -53,5 +54,5 @@
         }
       }
     }
-  }
+}%}
 }

@@ -144,103 +144,227 @@ rMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \box \bold $markp }
 #})
 
-rehearsalMarksSymph =
-{
-  s2.*4 |
-  \repeat volta 2
-  {
-    s2.*40 |
-
-    \rMark "A"
-    s2.*20 |
-
-    \rMark "B"
-    s2.*18 |
-
-    \rMark "C"
-    s2.*26 |
-
-    \rMark "D"
-    s2.*23 |
-
-    \rMark "E"
-    s2.*20 |
-  }
-  \alternative
-  {
-    {s2.*4}
-    {s2.*2}
-  }
-  s2.*32 |
-
-  \rMark "F"
-  s2.*34 |
-
-  \rMark "G"
-  s2.*28 |
-
-  \rMark "H"
-  s2.*32 |
-
-  \rMark "I"
-  s2.*42 |
-
-  \rMark "K"
-  s2.*40 |
-
-  \rMark "L"
-  s2.*36 |
-
-  \rMark "M"
-  s2.*50 |
-
-  \rMark "N"
-  s2.*20 |
-
-  \rMark "O"
-  s2.*18 |
-
-  \rMark "P"
-  s2.*26 |
-
-  \rMark "Q"
-  s2.*23 |
-
-  \rMark "R"
-  s2.*16 |
-
-  \rMark "S"
-  s2.*44 |
-
-  \rMark "T"
-  s2.*36 |
-
-  \rMark "U"
-  s2.*16 |
-
-  \rMark "V"
-  s2.*26 |
-
-  \rMark "W"
-  s2.*19 |
+% Tempo markings
+adagio = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Adagio"
 }
 
-outlineSymph =
-<< \rehearsalMarksSymph
+unPochettMenoAdagio = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Un pochett. meno adagio"
+}
+
+pocoAffrett = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "poco affrett."
+}
+
+pocoAPocoAffrettando = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Poco a poco affrettando il Tempo al"
+}
+
+vivacissimo = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Vivacissimo"
+}
+
+pocoRallentando = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Poco rallentando al"
+}
+
+pocoAPocoMenoLento = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Poco a poco meno lento al"
+}
+
+allegroMoltoModerato = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Allegro molto moderato"
+}
+
+unPochettAffrettando = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Un pochett. affrettando"
+}
+
+allegroModerato = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Allegro moderato"
+}
+
+pocoAPocoMenoModerato = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Poco a poco meno moderato"
+}
+
+vivace = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Vivace"
+}
+
+presto = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Presto"
+}
+
+pocoAPocoRallentando = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Poco a poco rallentando al"
+}
+
+largamente = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Largamente molto"
+}
+
+affettuoso = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Affettuoso"
+}
+
+tempoI = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Tempo I"
+}
+
+largamenteMolto = {
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
+  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
+  \mark \markup "Largamente molto"
+}
+
+%{
+rehearsalMarksSymph =
 {
-  \time 3/4
-  \tempo "Allegro con brio" 2.=60
-  s2.*4
-  \repeat volta 2
-  {
-    s2.*147
-  }
-  \alternative
-  {
-    {s2.*4}
-    {s2.*2}
-  }
-  s2.*538 \bar "|."
+  s1.*12 |
+  \mark \default
+  
+}
+%}
+
+outlineSymph =
+<< % \rehearsalMarksSymph
+{
+  \set Score.markFormatter = #format-mark-alphabet %% to include the letter "I" as a rehearsal mark
+  \set Score.markFormatter = #format-mark-box-numbers %% to put rehearsal marks in rectangles
+  
+  \time 3/2
+  \adagio %\tempo "Adagio" 4=70
+  
+  s1.*6 | % pg.3
+  s1.*6 \mark \default s1.*4 | % pg.4 -- A
+  s1.*7 | % pg.5
+  s1.*11 \time 2/2 s1 \time 3/2 \mark \default s1.*5 | % pg.6 -- B
+  s1.*9 | % pg.7
+  s1.*4 \mark \default s1.*5 | % pg.8 -- C
+  s1.*6 \time 2/2 s1 \time 3/2 s1.*2 | % pg.9
+  s1.*3 \mark \default s1.*6 | % pg.10 -- D
+  s1.*7 \mark \default s1.*4 | % pg.11 -- E
+  s1.*5 \unPochettMenoAdagio s1.*2 | % pg.12
+  s1.*2 \mark \default s1.*4 \pocoAffrett s1. | % pg.13 -- F
+  s1.*5 | % pg.14
+  \mark \default s1.*6 | % pg.15 -- G
+  s1.*5 | % pg.16
+  s1. \mark \default s1.*5 | % pg.17 -- H
+  s1.*4 | % pg.18
+  \mark \default s1. s1 \pocoAPocoAffrettando s2 s1.*3 | % pg.19 -- I
+  s1. \time 6/4 s1.*6 | % pg.20
+  s1.*8 | % pg.21
+  s1.*8 | % pg.22
+  \mark \default \vivacissimo s1.*13 | % pg.23 -- J
+  s1.*8 | % pg.24
+  s1.*8 | % pg.25
+  s1.*2 \mark \default s1.*6 | % pg.26 -- K
+  s1.*7 | % pg.27
+  s1.*8 | % pg.28
+  s1.*5 \pocoRallentando s1.*7 \time 3/2 s1. | % pg.29
+  s1. \mark \default \adagio s1.*2 | % pg.30 -- L
+  s1.*3 | % pg.31
+  \time 2/2 s1 \time 3/2 s1.*2 | % pg.32
+  s1.*3 | % pg.33
+  s1.*2 \mark \default s1. | % pg.34 -- M
+  s1. \pocoAPocoMenoLento s1.*2 | % pg.35
+  \time 2/2 s1*2 \time 3/2 s1. \time 6/4 s1. | % pg.36
+  s1.*3 \mark \default s1.*2 | % pg.37 -- N
+  s1.*4 | % pg.38
+  s1.*5 | % pg.39
+  s1. \allegroMoltoModerato s1.*7 | % pg.40
+  s1.*11 | % pg.41
+  s1.*3 \mark \default s1.*5 \unPochettAffrettando s1.*2 \allegroModerato s1.*5 \pocoAPocoMenoModerato s1. | % pg.42 -- O
+  s1.*6 \mark \default s1.*7 | % pg.43 -- P
+  s1.*7 | % pg.44
+  s1.*7 | % pg.45
+  s1.*6 | % pg.46
+  \mark \default s1.*4 | % pg.47 -- Q
+  s1.*5 | % pg.48
+  s1.*9 | % pg.49
+  s1. \mark \default s1.*6 | % pg.50 -- R
+  s1.*7 | % pg.51
+  s1.*3 \mark \default s1.*4 | % pg.52 -- S
+  s1.*6 | % pg.53
+  s1.*6 \mark \default s1. | % pg.54 -- T
+  s1.*8 | % pg.55
+  s1.*8 | % pg.56
+  s1.*3 \mark \default s1.*4 | % pg.57 -- U
+  s1.*9 | % pg.58
+  s1. \vivace s1.*6 | % pg.59
+  s1.*7 | % pg.60
+  \mark \default s1.*7 | % pg.61 -- V
+  s1.*7 | % pg.62
+  s1.*5 \mark \default s1.*2 | % pg.63 -- W
+  s1.*6 \presto s1.*2 | % pg.64
+  s1.*8 | % pg.65
+  s1.*5 \pocoAPocoRallentando s1.*3 | % pg.66
+  s1.*6 \mark \default s1.*2 | % pg.67 -- X
+  s1. \adagio \time 3/2 s1.*3 | % pg.68
+  s1.*2 \time 2/2 s1 \time 3/2 s1. | % pg.69
+  s1.*3 | % pg.70
+  s1. \mark \default s1.*3 | % pg.71 -- Y
+  s1.*3 | % pg.72
+  s1.*3 \mark \default \largamenteMolto s1. | % pg.73 -- Z
+  s1.*9 \affettuoso s1.*3 | % pg.74
+  s1.*3 \mark "Ö" s1.*5 | % pg.75 -- Ö
+  s1.*5 \tempoI s1.*4 | % pg.76
+  
+  \bar "|."
 }
 >>
 
@@ -265,11 +389,12 @@ afterGraceFraction = #(cons 15 16)
     \Voice
     \override DynamicTextSpanner #'font-size = #0
   }
-
+  
+  
+  
   \context
   {
-    \Staff
-    \RemoveEmptyStaves
+    \RemoveEmptyStaffContext
   }
 }
 
