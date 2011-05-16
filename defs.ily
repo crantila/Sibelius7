@@ -76,6 +76,9 @@ transpositionPrint = #(define-music-function (parser location note) (ly:music?)
 %% These Are Used
 pocoAPocoMenoP = #(make-dynamic-script-text-dyn-left "poco a poco meno" "p") % \markup{\append{\italic"poco a poco meno " \dynamic p}}
 pocoF = #(make-dynamic-script-text-dyn-left "poco" "f")
+arco = \markup { "arco" }
+pizz = \markup { "pizz." }
+div = \markup { "div." }
 
 %% These Are not Used
 justDecresc = #(make-nonline-text-dim "decresc.")
@@ -195,7 +198,7 @@ outlineSymph =
   s1. \mark \default s1.*5 | % pg.17 -- H
   s1.*4 | % pg.18
   \mark \default s1. s1 \pocoAPocoAffrettando s2 s1.*3 | % pg.19 -- I
-  s1. \time 6/4 s1.*6 | % pg.20
+  s1. \key c \minor \time 6/4 s1.*6 | % pg.20
   s1.*8 | % pg.21
   s1.*8 | % pg.22
   \mark \default \vivacissimo s1.*13 | % pg.23 -- J

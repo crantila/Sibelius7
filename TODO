@@ -26,9 +26,7 @@ DONE: Adjust the orchestration
     DONE: metre changes
     DONE: check proper instrument-family grouping in the full score
 -Input score
-  -develop a solution where the tempo changes don't use \mark command, so they don't conflict with rehearsal marks; nice to use a function
-  -change the "cut time" marks to read "2/2"
-  -remove the text spanners in word-based dynamic marks
+  DONE: change tempo marks from "\mark" to "\tempo"
   IN-PROGRESS: input bass
   -input cello
   -input viola
@@ -56,5 +54,12 @@ DONE: Adjust the orchestration
 -Check for errors
   -<list of steps and files goes here>
 -Optimize visually
+  -turn off the "natural-then-sharp" when I sharp a flatted note... see "ais" in Bass part, line 96
+  -add a "half note equals dotted half note" sign to the metre change at m.220
+  -change the "cut time" marks to read "2/2"
+  -remove the text spanners in word-based dynamic marks
+  
+  -(do this last) refactor source files to remove (unnecessary) references to scanned pages
+    -remove broken-up multi-measure rests that are a result of these page numbers
   -<list of steps and files goes here>
 
