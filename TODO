@@ -28,7 +28,8 @@ DONE: Adjust the orchestration
 -Input score
   -develop a solution where the tempo changes don't use \mark command, so they don't conflict with rehearsal marks; nice to use a function
   -change the "cut time" marks to read "2/2"
-  -input bass
+  -remove the text spanners in word-based dynamic marks
+  IN-PROGRESS: input bass
   -input cello
   -input viola
   -input violin2

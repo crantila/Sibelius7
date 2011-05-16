@@ -73,6 +73,11 @@ transpositionPrint = #(define-music-function (parser location note) (ly:music?)
 #(define (make-nonline-text-dim text)
   (make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text text 'tweaks '((dash-period . -1))))
 
+%% These Are Used
+pocoAPocoMenoP = #(make-dynamic-script-text-dyn-left "poco a poco meno" "p") % \markup{\append{\italic"poco a poco meno " \dynamic p}}
+pocoF = #(make-dynamic-script-text-dyn-left "poco" "f")
+
+%% These Are not Used
 justDecresc = #(make-nonline-text-dim "decresc.")
 justCresc = #(make-nonline-text-cresc "cresc.")
 justSempreCresc = #(make-nonline-text-cresc "sempre cresc.")
@@ -145,131 +150,24 @@ rMark = #(define-music-function (parser location markp) (string?)
 #})
 
 % Tempo markings
-adagio = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Adagio"
-}
-
-unPochettMenoAdagio = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Un pochett. meno adagio"
-}
-
-pocoAffrett = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "poco affrett."
-}
-
-pocoAPocoAffrettando = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Poco a poco affrettando il Tempo al"
-}
-
-vivacissimo = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Vivacissimo"
-}
-
-pocoRallentando = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Poco rallentando al"
-}
-
-pocoAPocoMenoLento = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Poco a poco meno lento al"
-}
-
-allegroMoltoModerato = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Allegro molto moderato"
-}
-
-unPochettAffrettando = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Un pochett. affrettando"
-}
-
-allegroModerato = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Allegro moderato"
-}
-
-pocoAPocoMenoModerato = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Poco a poco meno moderato"
-}
-
-vivace = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Vivace"
-}
-
-presto = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Presto"
-}
-
-pocoAPocoRallentando = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Poco a poco rallentando al"
-}
-
-largamente = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Largamente molto"
-}
-
-affettuoso = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Affettuoso"
-}
-
-tempoI = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Tempo I"
-}
-
-largamenteMolto = {
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature key-signature)
-  \once \override Staff.TimeSignature #'break-align-anchor-alignment = #LEFT
-  \mark \markup "Largamente molto"
-}
+adagio = { \tempo "Adagio" 4 = 70 }
+unPochettMenoAdagio = { \tempo "Un pochett. meno adagio" }
+pocoAffrett = { \tempo "poco affrett." }
+pocoAPocoAffrettando = { \tempo "Poco a poco affrettando il Tempo al" }
+vivacissimo = { \tempo "Vivacissimo" }
+pocoRallentando = { \tempo "Poco rallentando al" }
+pocoAPocoMenoLento = { \tempo "Poco a poco meno lento al" }
+allegroMoltoModerato = { \tempo "Allegro molto moderato" }
+unPochettAffrettando = { \tempo "Un pochett. affrettando" }
+allegroModerato = { \tempo "Allegro moderato" }
+pocoAPocoMenoModerato = { \tempo "Poco a poco meno moderato" }
+vivace = { \tempo "Vivace" }
+presto = { \tempo "Presto" }
+pocoAPocoRallentando = { \tempo "Poco a poco rallentando al" }
+largamente = { \tempo "Largamente molto" }
+affettuoso = { \tempo "Affettuoso" }
+tempoI = { \tempo "Tempo I" }
+largamenteMolto = { \tempo "Largamente molto" }
 
 outlineSymph =
 <<
