@@ -119,7 +119,89 @@ bassSymph = \relative c
   \time 3/2
   r2 \times 4/6 { r4 r cis8\(( d } \times 4/6 { es8 d es d es e) } |
   %% pg.30
+  \times 4/6 { f8\mf( e\) f\( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
+  %% L
+  r2 \times 4/6 { r4 r cis8\((\< d } \times 4/6 { es8 d es d es e } |
+  \times 4/6 { f8\mf e)\> f( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
+  %% pg.31
+  r2 \times 4/6 { r4 r cis8\((\< d } \times 4/6 { es8 d es d es e) } |
+  \times 4/6 { f8\mf( e\>\) f\( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
+  r2 \times 4/6 { b8\mp\(( c\< b c cis d } \times 4/6 { es d es d es e) } \time 2/2
+  %% pg.32
+  \times 4/6 { f8\mf( e\>\) f\( e es d } \times 4/6 { es d es d des c) } \time 3/2
+  \times 4/6 { b8\mp( c\)\< b\( c cis d } \times 4/6 { es d es d es e) } \times 4/6 { f\mf( e\)\> f\( e es d } |
+  \times 4/6 { es8 d es d des c) } \times 4/6 { b\mp( c\)\< b\( c cis d } \times 4/6 { es d es d es e } |
+  %% pg.33
+  \times 4/6 { f8)\mf e\)( f\( e\> es d } \times 4/6 { es d es d des c } \times 4/6 { ces bes ces bes a aes\) }
+  \times 4/6 { g8\(\mp aes)\< g( aes a bes } \times 4/6 { b c b c cis d\) } \times 4/6 { dis\( e) dis( e f fis } |
+  \times 4/6 { g8\pocoF as g as\> a bes\) } \times 4/6 { b\( c) b( c cis d } \times 4/6 { dis\)\mf e\( dis e f\)) r8 } |
+  %% pg.34
+  R1. |
+  \times 4/6 { c,=8\f\(( des c des d es } \times 4/6 { e f\) e\( f fis g) } \times 4/6 { as( a\) gis\( a bes b) } |
+  %% M
+  \times 4/6 { c8( des\) c\( des d es } \times 4/6 { e f\)) r4 r } \times 4/6 { gis,,=,8\p\(( a\< gis a bes b) }
+  %% pg.35
+  \times 4/6 { c8( cis\) d\!\( es e f) } \times 4/6 { fis( g\) as\( a bes b) } \times 4/6 { c( b\) bes\( a aes g) } |
+  \times 4/6 { fis8( f\) e\( es d des } \times 4/6 { c b bes a\> as g } \times 4/6 { ges f\!\)) r4 r } |
+  \times 4/6 { r4 r e8\((\< f } \times 4/6 { fis g as a bes b) } \times 4/6 { c( cis\) d\( es e f\! } |
+  %% pg.36
+  \time 2/2
+  \times 4/6 { fis8 g\) as\( a bes b) } \times 4/6 { c( b\) bes\( a as g } |
+  \times 4/6 { fis8 f\) e\( es d des) } \times 4/6 { c(\> b\) bes\( a as g\! } |
+  \time 3/2
+  \times 4/6 { ges8 f\)) r4 r } r2 r |
+  \time 6/4
+  R1. |
+  %% pg.37
+  r4^\div <b b'>2~\ff <b b'>4 <e e,>2~\> |
+  <e e,>2\! r4 r2 r4 | R1. |
+  %% N
+  R1.*2 |
+  %% pg.38
+  R1. |
+  r2 b'=4\mf^\markup{"Is this supposed to be pizz? Cello is..."} e,2 r4 |
+  R1.*2 |
+  %% pg.39
+  R1. |
+  r2 bes'=4\mp es,2. |
+  R1. |
+  r2 a=4\p d,2. |
+  r2 r4 cis2.\pp |
+  %% pg.40
+  r2 r4 c!2.\ppp |
+  %% "Allegro molto moderato" and cancellation of the three flats
+  R1.*6 |
+  %% pg.41
+  R1. |
+  R1.\fermata |
+  R1.*9 |
+  %% pg.42
+  R1.*3 |
+  %% O
+  R1.*13 |
+  %% pg.43
+  R1.*6 |
+  %% P
+  r2 r4 d=2.\mp^\pizz^\markup{ "P doesn't line up correctly"} |
+  g1. | R1.*2 |
+  r2 r4 d2. | g1. | R1. |
+  %% pg.44
+  g,1.-> | R1.*3 | bes2.\mf es |
+  as,1. | g'2.~(^\arco\mp\< g2 e4)\! |
+  %% pg.45
+  r4 e8\< d c4~( c2 g4)\! |
+  e2.~\> e2\! r4 | R1.*5 |
+  %% pg.46
+  R1.*2 |
+  r4^\arco es'=\f\< es es es es | es4 es es\! es as,2~ |
+  as4. r8 r4 r2 r4 | R1.^\markup{"Q doesn't line up correctly"} |
+  %% pg.47
+  %% Q
+  R1.*3 |
+  r2^\div r4 <gis gis'>2.\mf^\pizz |
+  %% pg.48
   
+  %% Continue with Scan 024
   
 }
 

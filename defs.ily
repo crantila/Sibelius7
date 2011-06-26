@@ -218,7 +218,7 @@ outlineSymph =
   s1.*3 \mark \default s1.*2 | % pg.37 -- N
   s1.*4 | % pg.38
   s1.*5 | % pg.39
-  s1. \allegroMoltoModerato s1.*7 | % pg.40
+  s1. \allegroMoltoModerato \key c \major s1.*7 | % pg.40
   s1.*11 | % pg.41
   s1.*3 \mark \default s1.*5 \unPochettAffrettando s1.*2 \allegroModerato s1.*5 \pocoAPocoMenoModerato s1. | % pg.42 -- O
   s1.*6 \mark \default s1.*7 | % pg.43 -- P
