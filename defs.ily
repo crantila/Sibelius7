@@ -86,6 +86,7 @@ justCresc = #(make-nonline-text-cresc "cresc.")
 justSempreCresc = #(make-nonline-text-cresc "sempre cresc.")
 justDolceCresc = #(make-nonline-text-cresc "dolce cresc.")
 
+%% These seem like they're used
 semprePiuP = #(make-dynamic-script-text-dyn-left "sempre più" "p")
 semprePiuF = #(make-dynamic-script-text-dyn-left "sempre più" "f")
 semprePP = #(make-dynamic-script-text-dyn-left "sempre" "pp")
@@ -105,6 +106,7 @@ arco = \markup{\italic arco}
 sottoVoce = \markup{\italic {sotto voce}}
 moltoMarcato = \markup{\italic {molto marcato}}
 
+%% These are not yet used
 partBreak = { \tag #'part \break }
 partNoBreak = { \tag #'part \noBreak }
 

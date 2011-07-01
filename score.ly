@@ -58,7 +58,7 @@
     <<
       \new StaffGroup %% Woodwinds
       <<
-        \new Staff
+        \new Staff = "Flauti"
         {
           \set Staff.instrumentName = "2 Flauti"
           \set Staff.shortInstrumentName = "Fl."
@@ -67,7 +67,7 @@
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \fluteTwoSymph}
           >>
         }
-        \new Staff
+        \new Staff = "Oboi"
         {
           \set Staff.instrumentName = "2 Oboi"
           \set Staff.shortInstrumentName = "Ob."
@@ -76,7 +76,7 @@
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \oboeTwoSymph}
           >>
         }
-        \new Staff
+        \new Staff = "Clarinetti"
         {
           \set Staff.instrumentName = "2 Clarinetti in B"
           \set Staff.shortInstrumentName = "Cl."
@@ -85,7 +85,7 @@
             \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \clarinetTwoSymph}
           >>
         }
-        \new Staff
+        \new Staff = "Fagotti"
         {
           \set Staff.instrumentName = "2 Fagotti"
           \set Staff.shortInstrumentName = "Fg."
@@ -97,7 +97,7 @@
       >>
       \new StaffGroup %% Brasswinds
       <<
-        \new Staff
+        \new Staff = "Corni"
         {
           \set Staff.instrumentName = "4 Corni in F"
           \set Staff.shortInstrumentName = "Cr."
@@ -108,7 +108,7 @@
             \new Voice {\voiceFour \dynamicDown \keepWithTag #'score \hornFourSymph}
           >>
         }
-        \new Staff
+        \new Staff = "Trombe"
         {
           \set Staff.instrumentName = "3 Trombe in B"
           \set Staff.shortInstrumentName = "Tro."
@@ -118,7 +118,7 @@
             \new Voice {\voiceThree \dynamicUp \keepWithTag #'score \trumpetThreeSymph}
           >>
         }
-        \new Staff
+        \new Staff = "Tromboni"
         {
           \set Staff.instrumentName = "3 Tromboni"
           \set Staff.shortInstrumentName = "Tbn."
@@ -129,7 +129,7 @@
           >>
         }
       >>
-      \new Staff %% Timpani (not in a group)
+      \new Staff = "Timpani" %% Timpani (not in a group)
       {
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Tmp."
@@ -137,31 +137,31 @@
       }
       \new StaffGroup %% Strings
       <<
-        \new Staff
+        \new Staff = "ViolinoI"
         {
           \set Staff.instrumentName = "Violino I"
           \set Staff.shortInstrumentName = "Vl.I"
           \violinOneSymph
         }
-        \new Staff
+        \new Staff = "ViolinoII"
         {
           \set Staff.instrumentName = "Violino II"
           \set Staff.shortInstrumentName = "Vl.II"
           \violinTwoSymph
         }
-        \new Staff
+        \new Staff = "Alti"
         {
           \set Staff.instrumentName = "Alti"
           \set Staff.shortInstrumentName = "Alti."
           \violaSymph
         }
-        \new Staff
+        \new Staff = "Celli"
         {
           \set Staff.instrumentName = "Celli"
           \set Staff.shortInstrumentName = "Cel."
           \celloSymph
         }
-        \new Staff
+        \new Staff = "Bassi"
         {
           \set Staff.instrumentName = "Bassi"
           \set Staff.shortInstrumentName = "Bas."

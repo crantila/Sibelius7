@@ -27,8 +27,9 @@ DONE: Adjust the orchestration
     DONE: check proper instrument-family grouping in the full score
 -Input score
   DONE: change tempo marks from "\mark" to "\tempo"
+  -change all parts to the "new_template.ly" model
   IN-PROGRESS: input bass
-  -input cello
+  IN-PROGRESS: input cello
   -input viola
   -input violin2
   -input violin1
