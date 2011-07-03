@@ -79,8 +79,9 @@ pocoF = #(make-dynamic-script-text-dyn-left "poco" "f")
 arco = \markup { "arco" }
 pizz = \markup { "pizz." }
 div = \markup { "div." }
+pocoMarc = \markup{ \italic "poco marc." }
 
-%% These Are not Used
+%% These are yet not used
 justDecresc = #(make-nonline-text-dim "decresc.")
 justCresc = #(make-nonline-text-cresc "cresc.")
 justSempreCresc = #(make-nonline-text-cresc "sempre cresc.")
@@ -101,10 +102,11 @@ sempreStaccato = \markup{\italic {sempre staccato}}
 sempreLegato = \markup{\italic {sempre legato}}
 dolce = \markup{\italic dolce}
 espress = \markup{\italic espress.}
-pizz = \markup{\italic pizz.}
-arco = \markup{\italic arco}
 sottoVoce = \markup{\italic {sotto voce}}
 moltoMarcato = \markup{\italic {molto marcato}}
+meno = \markup{\italic meno}
+crescPocoAPoco = \markup{ \italic "re-do this as a dynamic mark, in defs.ily" }
+collPuntoEVeloce = \markup{ \italic "coll punto e veloce" }
 
 %% These are not yet used
 partBreak = { \tag #'part \break }
