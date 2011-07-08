@@ -80,6 +80,8 @@ arco = \markup { "arco" }
 pizz = \markup { "pizz." }
 div = \markup { "div." }
 pocoMarc = \markup{ \italic "poco marc." }
+dolce = \markup{\italic dolce}
+piu = #(make-dynamic-script-text-dyn-left "più" "")
 
 %% These are yet not used
 justDecresc = #(make-nonline-text-dim "decresc.")
@@ -100,7 +102,6 @@ ppSemprePianissimoEStaccato = #(make-dynamic-script-dyn-text-left "pp" "sempre p
 pDolce = #(make-dynamic-script-dyn-text-left "p" "dolce")
 sempreStaccato = \markup{\italic {sempre staccato}}
 sempreLegato = \markup{\italic {sempre legato}}
-dolce = \markup{\italic dolce}
 espress = \markup{\italic espress.}
 sottoVoce = \markup{\italic {sotto voce}}
 moltoMarcato = \markup{\italic {molto marcato}}
@@ -222,7 +223,7 @@ outlineSymph =
   s1.*3 \mark \default s1.*2 | % pg.37 -- N
   s1.*4 | % pg.38
   s1.*5 | % pg.39
-  s1. \allegroMoltoModerato \key c \major s1.*7 | % pg.40
+  s1. \allegroMoltoModerato \key c \major s1.*6 | % pg.40
   s1.*11 | % pg.41
   s1.*3 \mark \default s1.*5 \unPochettAffrettando s1.*2 \allegroModerato s1.*5 \pocoAPocoMenoModerato s1. | % pg.42 -- O
   s1.*6 \mark \default s1.*7 | % pg.43 -- P

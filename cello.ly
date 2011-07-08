@@ -345,8 +345,179 @@ notesSymph = \new Staff = "Celli" \relative c
    \times 4/6 { g8\mf( as g as a bes\) } \times 4/6 { b\( c b c cis d) } \times 4/6 { es8( d es d es e\) } |
    %% pg.32
    % \time 2/2
+   \times 4/6 { f8\f\( e f e es d) } \times 4/6 { es\dim( d es d des c\) } |
+   % \time 3/2
+   \times 4/6 { b8\mf\( c\< b c cis d) } \times 4/6 { es( d es d es e\) } \times 4/6 { f\f\( e\> f e es d) } |
+   \times 4/6 { es8( d es d des c\) } \times 4/6 { b\(\mf c\< b c cis d) } \times 4/6 { es( d es d es e\) } |
+   %% pg.33
+   \times 4/6 { f8\f\( e f e es\> d) } \times 4/6 { es\(( d es d des c\) } \times 4/6 { ces\( bes ces bes a as } |
+   g2.\mf\>\)) r4\! \times 4/6 { dis8\(( e dis e f fis } |
+   \times 4/6 { g8 as g as a bes) } \times 4/6 { b(\cresc c b c cis d\) } \times 4/6 { dis\( e dis e f fis) } |
+   %% pg.34
+   \times 4/6 { g8( as g as a bes\) } \times 4/6 { b\( c b c cis d)\f } \times 4/6 { dis(\> e dis e f fis } |
+   g4\))\! r r2 r |
+   %% M
+   \times 4/6 { c,,,=,8\f\<\(( des c des d es\) } \times 4/6 { e\!\( f e f fis g) } \times 4/6 { as( a gis a bes b\) } |
+   %% pg.35
+   \times 4/6 { c8\( cis d es e f) } \times 4/6 { fis( g as a bes b\) } \times 4/6 { c\( b bes a as g) } |
+   \times 4/6 { fis8( f e es d des\) } \times 4/6 { c\( b bes a\> as g) } \times 4/6 { fis( f e es\! d des\) } |
+   \times 4/6 { c8\( cis d es e f)\< } \times 4/6 { fis( g as a bes b\) } \times 4/6 { c\( cis d es e f) } |
+   %% pg.36
+   % \time 2/2
+   \times 4/6 { fis8\!( g as a bes b\) } \times 4/6 { c\( b bes a as g) } |
+   \times 4/6 { fis8( f e es d des\) } \times 4/6 { c\(\> b bes a as g) } |
+   % \time 3/2
+   \times 4/6 { fis8(\! f e es d des } c4.\)) r8
+      \slurNeutral \phrasingSlurNeutral \clef tenor \times 2/3 { c''='4\<( e g) } |
+   % \time 6/4
+   ais4--\ff b-- gis-- e-- dis-- cis-- |
+   %% pg.37
+   \clef bass b4--\< gis-- e-- dis2(\> cis4) |
+   b4.(\rfz c8)\> des c r2\! r4 |
+   b'4.(\pocoF c8) des c r2 r4 |
+   %% N
+   R1.*2 |
+   %% pg.38
+   r8 b,=,-.\mf\< cis-. dis-. e-. fis-. g-. f-. e-. f-. g-. a-.\! |
+   ais8( b) r4 b,^\pizz\mf e,2 r4 |
+   R1.*2 |
+   %% pg.39
+   r8^\arco bes'=,\p c d es f\< ges f es f ges as\! |
+   a8( bes) r4 bes,^\pizz es,2 r4 |
+   R1. |
+   r2 a4\mp d,2 r4 |
+   r4 gis8-.^\arco\p fis-. e-. dis-. cis4 r r |
+   %% pg.40
+   r4 g'=,8-.\pp f!-. es-. d-. c4 r r |
+   %% Allegro molto moderato
+   \key c \major
+   R1. |
+   a''=2( b4) cis4 b a |
+   R1. |
+   c2(\mf d4) d4( e) f |
+   e2.~\> e2\! r4 |
+   R1. |
+   %% pg.41
+   R1. |
+   R1.\fermata^\markup{"Ain't printin' no fermata here..."} |
+   f2.--\pocoF e-- |
+   d4-- r8 e g4-_ a2.-- |
+   a2.--\< b,\! |
+   c1. |
+   R1.*2 |
+   f,=2.--\mf e--_\dolce |
+   d2( e4) c2 c4( |
+   g'4) r r r4 g:8 a:8 |
+   %% pg.42
+   b4:8\< cis:8 d:8 e:8 f:8 g:8\! |
+   a2. b, |
+   c1.\>
+   %% O
+   R1.*2\! |
+   f,=2.--\p e--_\dolce |
+   d2( e4 c2) c4( |
+   g'4) r r r2 r4 |
+   R1.*8 |
+   %% pg.43
+   R1.*6 |
+   %% P
+   <<
+      {
+         c,=2.-- d-- | g1. | g1. | g1. |
+         c,2. d | g1.~ | g2.~ g2 r4 |
+         %% pg.44
+         g,=,1.->^\pizz | r2 r4 r4 bes'2^\arco~(\< |
+         bes2.~ bes4\!) as8( bes\> as g |
+         as2.~ as4\!) r r | des1.^\pizz | c1. |
+      } \\
+      {
+         a,=,2.-- c-- | e1. | f1. | e1. |
+         a,2. c | e1.~( | e2 f4 g2) r4 |
+         %% pg.44
+         s1. | r2 r4 r g=2~( |
+         g2.~ g4) f8( g f e | f2.~ f4) r4 r |
+         bes,2. es | as,1. |
+      }
+   >>
+   \grace { g8 } g'=2.~(\pocoF^\arco\< g2 es4)\! |
+   %% pg.45
+   g4 e8 d c4~( c2 g4) |
+   r4
+   <<
+      {
+         e'=4:8 g:8 c:8 g:8\cresc c:8 | \clef tenor
+         e4:8 c:8 e:8 g:8 e:8 g:8 |
+         c:8 g:8\ff c:8 e2.:8\open |
+         \repeat unfold 3 { e2.:8 e:8 } |
+         %% pg.46
+         \repeat unfold 2 { e2.:8 e:8 } |
+         \clef bass r4 es,,=\ff es es4 es es |
+         es4 es es
+      } \\
+      {
+         e,=,4:8 g:8 c:8 g:8 c:8 |
+         e4:8 c:8 e:8 g:8 e:8 g:8 |
+         c:8 g:8 c:8 r2 r4 |
+         R1.*3 |
+         %% pg.46
+         R1.*2 |
+         r4 c,=4 c c4 c c |
+         c4 c c
+      }
+   >>
+   r2 r4 |
+   dis4.(\f\> e8)\! f8 e r2 r4 |
+   dis'4.\>(\piu e8)\! f8 e r2 r4 |
+   %% pg.47
+   %% Q
+   R1.*3 |
+   r2^\pizz dis,=4 gis,2 r4 |
+   %% pg.48
+   R1. |
+   <<
+      \new Staff \with { alignAboveContext = "Celli" }
+      { %% upper staff
+         \once \override Staff.TimeSignature #'stencil = ##f
+         \clef bass
+         
+         r2^\markup{"not 100% sure about these pitches"} r4 r4^\arco bes'=:8 g:8 |
+         bes4:8 g:8 bes:8 g:8 bes:8 g:8 |
+         c4:8 fis,:8 c':8 g:8 bes:8 e,!:8 |
+         bes'4:8 e,:8 bes':8 f:8 as:8 d,!:8 |
+         %% pg.49
+         as'4:8\dim d,:8\! as':8 es:8 ges:8 es:8 |
+         r2^\div r4 << { es=2(\> a,4)\! } \\ { a=,2( es'!4) } >> |
+         r2 r4 << { e!=2(\> ais,!4\!) } \\ { ais!=,2( e'!4) } >> |
+         r2 r4 << { f=2\>( b,4)\! } \\ { b=,2( f'4) } >> |
+      }
+      { %% lower staff
+         r2 r4 r^\arco g=4:8 bes:8 |
+         g4:8 bes:8 g:8 bes:8 g:8 bes:8 |
+         fis4:8 c':8 fis,:8 bes:8 g:8 bes:8 |
+         e,!4:8 bes':8 e,:8 as:8 f:8 as:8 |
+         %% pg.49
+         d,4:8 as':8 d,:8 ges:8 es:8 ges:8 |
+         r2^\div r4 << { a,=,2( f'4) } \\ { c,=,2( f4) } >> |
+         r2 r4 << { ais=,2( fis'4) } \\ { cis,=,2( fis4) } >> |
+         r2 r4 << { b=,2( g'4) } \\ { d,=,2( g4) } >> |
+      }
+   >>
+   R1. | r2^\pizz r4
+   <<
+      {
+         b'=2.\mp | r2 r4 a2. | r2\cresc r4 g2.\! | b2 f bes |
+         %% pg.50
+         
+      } \\
+      {
+         eis,=2. | r2 r4 dis2. | r2 r4 cis2. | f!2 b, e |
+         %% pg.50
+         
+      }
+   >>
    
-   %% Continue with Scan 016
+   %% Continue with Scan 025
+   
 }
 
 \include "makeParts.ily"
