@@ -1,4 +1,4 @@
-\version "2.14.1"
+\version "2.18.0"
 
 bassSymph = \relative c
 {
@@ -117,39 +117,39 @@ bassSymph = \relative c
   R1. | r2 r4 r cis\pp(\( d | es4 d es d es e) |
   f4\mp( e\>\) f\( e es d | es4 d es d des c\! | b4\pp\)) r r r2 r4 |
   \time 3/2
-  r2 \times 4/6 { r4 r cis8\(( d } \times 4/6 { es8 d es d es e) } |
+  r2 \tuplet 6/4 { r4 r cis8\(( d } \tuplet 6/4 { es8 d es d es e) } |
   %% pg.30
-  \times 4/6 { f8\mf( e\) f\( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
+  \tuplet 6/4 { f8\mf( e\) f\( e es d } \tuplet 6/4 { es8 d es d des c } \tuplet 6/4 { b8\p\)) r r4 r } |
   %% L
-  r2 \times 4/6 { r4 r cis8\((\< d } \times 4/6 { es8 d es d es e } |
-  \times 4/6 { f8\mf e)\> f( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
+  r2 \tuplet 6/4 { r4 r cis8\((\< d } \tuplet 6/4 { es8 d es d es e } |
+  \tuplet 6/4 { f8\mf e)\> f( e es d } \tuplet 6/4 { es8 d es d des c } \tuplet 6/4 { b8\p\)) r r4 r } |
   %% pg.31
-  r2 \times 4/6 { r4 r cis8\((\< d } \times 4/6 { es8 d es d es e) } |
-  \times 4/6 { f8\mf( e\>\) f\( e es d } \times 4/6 { es8 d es d des c } \times 4/6 { b8\p\)) r r4 r } |
-  r2 \times 4/6 { b8\mp\(( c\< b c cis d } \times 4/6 { es d es d es e) } \time 2/2
+  r2 \tuplet 6/4 { r4 r cis8\((\< d } \tuplet 6/4 { es8 d es d es e) } |
+  \tuplet 6/4 { f8\mf( e\>\) f\( e es d } \tuplet 6/4 { es8 d es d des c } \tuplet 6/4 { b8\p\)) r r4 r } |
+  r2 \tuplet 6/4 { b8\mp\(( c\< b c cis d } \tuplet 6/4 { es d es d es e) } \time 2/2
   %% pg.32
-  \times 4/6 { f8\mf( e\>\) f\( e es d } \times 4/6 { es d es d des c) } \time 3/2
-  \times 4/6 { b8\mp( c\)\< b\( c cis d } \times 4/6 { es d es d es e) } \times 4/6 { f\mf( e\)\> f\( e es d } |
-  \times 4/6 { es8 d es d des c) } \times 4/6 { b\mp( c\)\< b\( c cis d } \times 4/6 { es d es d es e } |
+  \tuplet 6/4 { f8\mf( e\>\) f\( e es d } \tuplet 6/4 { es d es d des c) } \time 3/2
+  \tuplet 6/4 { b8\mp( c\)\< b\( c cis d } \tuplet 6/4 { es d es d es e) } \tuplet 6/4 { f\mf( e\)\> f\( e es d } |
+  \tuplet 6/4 { es8 d es d des c) } \tuplet 6/4 { b\mp( c\)\< b\( c cis d } \tuplet 6/4 { es d es d es e } |
   %% pg.33
-  \times 4/6 { f8)\mf e\)( f\( e\> es d } \times 4/6 { es d es d des c } \times 4/6 { ces bes ces bes a aes\) }
-  \times 4/6 { g8\(\mp aes)\< g( aes a bes } \times 4/6 { b c b c cis d\) } \times 4/6 { dis\( e) dis( e f fis } |
-  \times 4/6 { g8\pocoF as g as\> a bes\) } \times 4/6 { b\( c) b( c cis d } \times 4/6 { dis\)\mf e\( dis e f\)) r8 } |
+  \tuplet 6/4 { f8)\mf e\)( f\( e\> es d } \tuplet 6/4 { es d es d des c } \tuplet 6/4 { ces bes ces bes a aes\) }
+  \tuplet 6/4 { g8\(\mp aes)\< g( aes a bes } \tuplet 6/4 { b c b c cis d\) } \tuplet 6/4 { dis\( e) dis( e f fis } |
+  \tuplet 6/4 { g8\pocoF as g as\> a bes\) } \tuplet 6/4 { b\( c) b( c cis d } \tuplet 6/4 { dis\)\mf e\( dis e f\)) r8 } |
   %% pg.34
   R1. |
-  \times 4/6 { c,=8\f\(( des c des d es } \times 4/6 { e f\) e\( f fis g) } \times 4/6 { as( a\) gis\( a bes b) } |
+  \tuplet 6/4 { c,=8\f\(( des c des d es } \tuplet 6/4 { e f\) e\( f fis g) } \tuplet 6/4 { as( a\) gis\( a bes b) } |
   %% M
-  \times 4/6 { c8( des\) c\( des d es } \times 4/6 { e f\)) r4 r } \times 4/6 { gis,,=,8\p\(( a\< gis a bes b) }
+  \tuplet 6/4 { c8( des\) c\( des d es } \tuplet 6/4 { e f\)) r4 r } \tuplet 6/4 { gis,,=,8\p\(( a\< gis a bes b) }
   %% pg.35
-  \times 4/6 { c8( cis\) d\!\( es e f) } \times 4/6 { fis( g\) as\( a bes b) } \times 4/6 { c( b\) bes\( a aes g) } |
-  \times 4/6 { fis8( f\) e\( es d des } \times 4/6 { c b bes a\> as g } \times 4/6 { ges f\!\)) r4 r } |
-  \times 4/6 { r4 r e8\((\< f } \times 4/6 { fis g as a bes b) } \times 4/6 { c( cis\) d\( es e f\! } |
+  \tuplet 6/4 { c8( cis\) d\!\( es e f) } \tuplet 6/4 { fis( g\) as\( a bes b) } \tuplet 6/4 { c( b\) bes\( a aes g) } |
+  \tuplet 6/4 { fis8( f\) e\( es d des } \tuplet 6/4 { c b bes a\> as g } \tuplet 6/4 { ges f\!\)) r4 r } |
+  \tuplet 6/4 { r4 r e8\((\< f } \tuplet 6/4 { fis g as a bes b) } \tuplet 6/4 { c( cis\) d\( es e f\! } |
   %% pg.36
   \time 2/2
-  \times 4/6 { fis8 g\) as\( a bes b) } \times 4/6 { c( b\) bes\( a as g } |
-  \times 4/6 { fis8 f\) e\( es d des) } \times 4/6 { c(\> b\) bes\( a as g\! } |
+  \tuplet 6/4 { fis8 g\) as\( a bes b) } \tuplet 6/4 { c( b\) bes\( a as g } |
+  \tuplet 6/4 { fis8 f\) e\( es d des) } \tuplet 6/4 { c(\> b\) bes\( a as g\! } |
   \time 3/2
-  \times 4/6 { ges8 f\)) r4 r } r2 r |
+  \tuplet 6/4 { ges8 f\)) r4 r } r2 r |
   \time 6/4
   R1. |
   %% pg.37
@@ -204,36 +204,3 @@ bassSymph = \relative c
   %% Continue with Scan 024
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
