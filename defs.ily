@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.18.0"
 
 %define movement names.
 Symph = ""
@@ -116,15 +116,15 @@ partNoBreak = { \tag #'part \noBreak }
 %Add multiple staccato dots for one note.
 tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
 #{
-   \override Script #'stencil = #ly:text-interface::print
+   \override Script.stencil = #ly:text-interface::print
    %TODO: Remove eval. Automatically figure out how many dots to add.
-   \override Script #'text =
+   \override Script.text =
    #(lambda (grob)
      (define (build-lst count)
        (let ((lst (list #:musicglyph "scripts.staccato")))
          (if (> count 1) (append lst '(#:hspace 0.4) (build-lst (- count 1))) lst)))
-     (eval (list markup #:concat (build-lst $dots)) (interaction-environment)))
-   \override Script #'X-offset =
+     (eval (list markup #:concat (build-lst dots)) (interaction-environment)))
+   \override Script.X-offset =
    #(lambda (grob)
      (let* ((parent (ly:grob-parent grob X))
             (parent-extent (ly:grob-property parent 'X-extent '(0 . 0)))
@@ -140,15 +140,15 @@ tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
 
 tremoloStaccatosOff =
 {
-  \revert Script #'stencil
-  \revert Script #'text
-  \revert Script #'X-offset
+  \revert Script.stencil
+  \revert Script.text
+  \revert Script.X-offset
 }
 
 sectionMark = #(define-music-function (parser location markp) (string?)
 #{
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \once \override Score.RehearsalMark.self-alignment-X = #left
+  \once \override Score.RehearsalMark.extra-spacing-width = #'(+inf.0 . -inf.0)
   \mark \markup { \smaller \bold $markp }
 #})
 
@@ -274,14 +274,14 @@ afterGraceFraction = #(cons 15 16)
     \Score
     % skipBars = ##t
     % extraNatural = ##f
-    % \override PaperColumn #'keep-inside-line = ##t
-    % \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    % \override PaperColumn.keep-inside-line = ##t
+    % \override NonMusicalPaperColumn.keep-inside-line = ##t
     % autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0), (make-accidental-rule 'any-octave 0), (make-accidental-rule 'same-octave 1))
   }
   
   \context
   {
-    \RemoveEmptyStaffContext
+    \Staff \RemoveEmptyStaves
   }
 }
 

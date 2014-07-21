@@ -25,7 +25,7 @@
   >>
  
 %}
-\version "2.12.3"
+\version "2.18.0"
 
 #(define (rest-score r)
   (let ((score 0)
@@ -115,19 +115,19 @@
                 
 
 mergeRestsOn = {
-  \override Staff.RestCollision #'positioning-done = #merge-rests-on-positioning
-  \override Staff.MultiMeasureRest #'Y-offset = #merge-multi-measure-rest-on-Y-offset
+  \override Staff.RestCollision.positioning-done = #merge-rests-on-positioning
+  \override Staff.MultiMeasureRest.Y-offset = #merge-multi-measure-rest-on-Y-offset
 }
 
 mergeRestsOff = {
-  \revert Staff.RestCollision #'positioning-done
-  \revert Staff.MultiMeasureRest #'Y-offset
+  \revert Staff.RestCollision.positioning-done
+  \revert Staff.MultiMeasureRest.Y-offset
 }
 
 mergeRests = \layout {
   \context {
     \Staff
-    \override RestCollision #'positioning-done = #merge-rests-on-positioning
-    \override MultiMeasureRest #'Y-offset = #merge-multi-measure-rest-on-Y-offset
+    \override RestCollision.positioning-done = #merge-rests-on-positioning
+    \override MultiMeasureRest.Y-offset = #merge-multi-measure-rest-on-Y-offset
   }
 }
