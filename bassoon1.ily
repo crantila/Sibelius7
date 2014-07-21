@@ -1,9 +1,7 @@
-\version "2.12.3"
+\version "2.18.0"
 
 bassoonOneSymph = \relative c'
 {
   \key c \major
-  \clef bass
-  
-  
+  \clef bass  
 }
