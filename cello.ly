@@ -1,4 +1,4 @@
-\version "2.14.1"
+\version "2.18.0"
 \include "defs.ily" 
 
 instrument = "Celli"
@@ -50,7 +50,7 @@ notesSymph = \new Staff = "Celli" \relative c
    <<
       \new Staff \with { alignAboveContext = "Celli" }
       { %% upper staff--new staff that appears above previous staff
-         \once \override Staff.TimeSignature #'stencil = ##f
+         \once \override Staff.TimeSignature.stencil = ##f
          \clef tenor
          
          r2_\markup{ \italic "mezza voce" } b'=-- c-- |
@@ -67,7 +67,7 @@ notesSymph = \new Staff = "Celli" \relative c
          a4 b) c2 b4 a |
          b2 e, b' |
          a4 g f e d d'~( | % \time 2/2
-         d4 c) \times 2/3 { b4 a g } |% \time 3/2
+         d4 c) \tuplet 3/2 { b4 a g } |% \time 3/2
          %% B
          f1_\pocoAPocoMenoP e2 |
          d4 c b2 a |
@@ -113,7 +113,7 @@ notesSymph = \new Staff = "Celli" \relative c
          f1 g4 f |
          e4 fis g2 fis4 e |
          a4 g f e d d~( | % \time 2/2
-         d4 c) \times 2/3 { b4 a g } | % \time 3/2
+         d4 c) \tuplet 3/2 { b4 a g } | % \time 3/2
          %% B
          f'1 e2 |
          d4 c b2 a |
@@ -333,42 +333,42 @@ notesSymph = \new Staff = "Celli" \relative c
    es4( d es d des c\) |
    ces4\(\mf bes ces bes a as) |
    % \time 3/2
-   \times 4/6 { g8(\< as g as a bes\) } \times 4/6 { b8\( c b c cis d)\! } \times 4/6 { es8( d es d es e\) } |
+   \tuplet 6/4 { g8(\< as g as a bes\) } \tuplet 6/4 { b8\( c b c cis d)\! } \tuplet 6/4 { es8( d es d es e\) } |
    %% pg.30
-   \times 4/6 { f8\( e f e es d) } \times 4/6 { es8(\dim d es d des c\) } \times 4/6 { ces8\( bes ces bes a as) } |
+   \tuplet 6/4 { f8\( e f e es d) } \tuplet 6/4 { es8(\dim d es d des c\) } \tuplet 6/4 { ces8\( bes ces bes a as) } |
    %% L -- Adagio
-   \times 4/6 { g8(\mf as g as a bes\) } \times 4/6 { b\(\cresc c b c cis d) } \times 4/6 { es( d es d es e\) } |
-   \times 4/6 { f8\(\f e f e es d) } \times 4/6 { es( d\dim es d des c\) } \times 4/6 { ces\( bes ces bes a as) } |
+   \tuplet 6/4 { g8(\mf as g as a bes\) } \tuplet 6/4 { b\(\cresc c b c cis d) } \tuplet 6/4 { es( d es d es e\) } |
+   \tuplet 6/4 { f8\(\f e f e es d) } \tuplet 6/4 { es( d\dim es d des c\) } \tuplet 6/4 { ces\( bes ces bes a as) } |
    %% pg.31
-   \times 4/6 { g8\mf( as g as a bes\) } \times 4/6 { b\(\cresc c b c cis d) } \times 4/6 { es( d es d es e\) } |
-   \times 4/6 { f8\f\( e f e es d) } \times 4/6 { es(\dim d es d des c\) } \times 4/6 { ces\( bes ces bes a as) } |
-   \times 4/6 { g8\mf( as g as a bes\) } \times 4/6 { b\( c b c cis d) } \times 4/6 { es8( d es d es e\) } |
+   \tuplet 6/4 { g8\mf( as g as a bes\) } \tuplet 6/4 { b\(\cresc c b c cis d) } \tuplet 6/4 { es( d es d es e\) } |
+   \tuplet 6/4 { f8\f\( e f e es d) } \tuplet 6/4 { es(\dim d es d des c\) } \tuplet 6/4 { ces\( bes ces bes a as) } |
+   \tuplet 6/4 { g8\mf( as g as a bes\) } \tuplet 6/4 { b\( c b c cis d) } \tuplet 6/4 { es8( d es d es e\) } |
    %% pg.32
    % \time 2/2
-   \times 4/6 { f8\f\( e f e es d) } \times 4/6 { es\dim( d es d des c\) } |
+   \tuplet 6/4 { f8\f\( e f e es d) } \tuplet 6/4 { es\dim( d es d des c\) } |
    % \time 3/2
-   \times 4/6 { b8\mf\( c\< b c cis d) } \times 4/6 { es( d es d es e\) } \times 4/6 { f\f\( e\> f e es d) } |
-   \times 4/6 { es8( d es d des c\) } \times 4/6 { b\(\mf c\< b c cis d) } \times 4/6 { es( d es d es e\) } |
+   \tuplet 6/4 { b8\mf\( c\< b c cis d) } \tuplet 6/4 { es( d es d es e\) } \tuplet 6/4 { f\f\( e\> f e es d) } |
+   \tuplet 6/4 { es8( d es d des c\) } \tuplet 6/4 { b\(\mf c\< b c cis d) } \tuplet 6/4 { es( d es d es e\) } |
    %% pg.33
-   \times 4/6 { f8\f\( e f e es\> d) } \times 4/6 { es\(( d es d des c\) } \times 4/6 { ces\( bes ces bes a as } |
-   g2.\mf\>\)) r4\! \times 4/6 { dis8\(( e dis e f fis } |
-   \times 4/6 { g8 as g as a bes) } \times 4/6 { b(\cresc c b c cis d\) } \times 4/6 { dis\( e dis e f fis) } |
+   \tuplet 6/4 { f8\f\( e f e es\> d) } \tuplet 6/4 { es\(( d es d des c\) } \tuplet 6/4 { ces\( bes ces bes a as } |
+   g2.\mf\>\)) r4\! \tuplet 6/4 { dis8\(( e dis e f fis } |
+   \tuplet 6/4 { g8 as g as a bes) } \tuplet 6/4 { b(\cresc c b c cis d\) } \tuplet 6/4 { dis\( e dis e f fis) } |
    %% pg.34
-   \times 4/6 { g8( as g as a bes\) } \times 4/6 { b\( c b c cis d)\f } \times 4/6 { dis(\> e dis e f fis } |
+   \tuplet 6/4 { g8( as g as a bes\) } \tuplet 6/4 { b\( c b c cis d)\f } \tuplet 6/4 { dis(\> e dis e f fis } |
    g4\))\! r r2 r |
    %% M
-   \times 4/6 { c,,,=,8\f\<\(( des c des d es\) } \times 4/6 { e\!\( f e f fis g) } \times 4/6 { as( a gis a bes b\) } |
+   \tuplet 6/4 { c,,,=,8\f\<\(( des c des d es\) } \tuplet 6/4 { e\!\( f e f fis g) } \tuplet 6/4 { as( a gis a bes b\) } |
    %% pg.35
-   \times 4/6 { c8\( cis d es e f) } \times 4/6 { fis( g as a bes b\) } \times 4/6 { c\( b bes a as g) } |
-   \times 4/6 { fis8( f e es d des\) } \times 4/6 { c\( b bes a\> as g) } \times 4/6 { fis( f e es\! d des\) } |
-   \times 4/6 { c8\( cis d es e f)\< } \times 4/6 { fis( g as a bes b\) } \times 4/6 { c\( cis d es e f) } |
+   \tuplet 6/4 { c8\( cis d es e f) } \tuplet 6/4 { fis( g as a bes b\) } \tuplet 6/4 { c\( b bes a as g) } |
+   \tuplet 6/4 { fis8( f e es d des\) } \tuplet 6/4 { c\( b bes a\> as g) } \tuplet 6/4 { fis( f e es\! d des\) } |
+   \tuplet 6/4 { c8\( cis d es e f)\< } \tuplet 6/4 { fis( g as a bes b\) } \tuplet 6/4 { c\( cis d es e f) } |
    %% pg.36
    % \time 2/2
-   \times 4/6 { fis8\!( g as a bes b\) } \times 4/6 { c\( b bes a as g) } |
-   \times 4/6 { fis8( f e es d des\) } \times 4/6 { c\(\> b bes a as g) } |
+   \tuplet 6/4 { fis8\!( g as a bes b\) } \tuplet 6/4 { c\( b bes a as g) } |
+   \tuplet 6/4 { fis8( f e es d des\) } \tuplet 6/4 { c\(\> b bes a as g) } |
    % \time 3/2
-   \times 4/6 { fis8(\! f e es d des } c4.\)) r8
-      \slurNeutral \phrasingSlurNeutral \clef tenor \times 2/3 { c''='4\<( e g) } |
+   \tuplet 6/4 { fis8(\! f e es d des } c4.\)) r8
+      \slurNeutral \phrasingSlurNeutral \clef tenor \tuplet 3/2 { c''='4\<( e g) } |
    % \time 6/4
    ais4--\ff b-- gis-- e-- dis-- cis-- |
    %% pg.37
@@ -477,7 +477,7 @@ notesSymph = \new Staff = "Celli" \relative c
    <<
       \new Staff \with { alignAboveContext = "Celli" }
       { %% upper staff
-         \once \override Staff.TimeSignature #'stencil = ##f
+         \once \override Staff.TimeSignature.stencil = ##f
          \clef bass
          
          r2^\markup{"not 100% sure about these pitches"} r4 r4^\arco bes'=:8 g:8 |
@@ -524,7 +524,7 @@ notesSymph = \new Staff = "Celli" \relative c
    <<
       \new Staff \with { alignAboveContext = "Celli" }
       { %% upper staff
-         \once \override Staff.TimeSignature #'stencil = ##f
+         \once \override Staff.TimeSignature.stencil = ##f
          \clef bass
          
          r4 g'=:8 f:8 g:8 f:8 g:8 |
@@ -723,40 +723,3 @@ notesSymph = \new Staff = "Celli" \relative c
 }
 
 \include "makeParts.ily"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
