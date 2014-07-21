@@ -507,16 +507,218 @@ notesSymph = \new Staff = "Celli" \relative c
       {
          b'=2.\mp | r2 r4 a2. | r2\cresc r4 g2.\! | b2 f bes |
          %% pg.50
-         
+         e,=2 a! es! |
+         %% R
+         e!2.\mf
       } \\
       {
-         eis,=2. | r2 r4 dis2. | r2 r4 cis2. | f!2 b, e |
+         eis=2. | r2 r4 dis2. | r2 r4 cis2. | f!2 b, e |
          %% pg.50
-         
+         bes=,2 es a, |
+         %% R
+         c2.
       }
    >>
+   r2 r4 | R1.*5 |
+   %% pg.51
+   <<
+      \new Staff \with { alignAboveContext = "Celli" }
+      { %% upper staff
+         \once \override Staff.TimeSignature #'stencil = ##f
+         \clef bass
+         
+         r4 g'=:8 f:8 g:8 f:8 g:8 |
+         e:8\< g:8 e:8 g:8 e:8 g:8 |
+         bes2.\mf~ bes4 as8( bes as g\> |
+         as2.~ as4\!) r r |
+      }
+      { %% lower staff
+         r4 f=:8 g:8 f:8 g:8 f:8 |
+         g:8 e:8 g:8 e:8 g:8 e:8 |
+         g2.~ g4 f8( g f e |
+         f2.~ f4) r r |
+      }
+   >>
+   R1.*2 | r4
+   <<
+      {
+         bes=4-- bes-- bes-- as4.( g8) |
+         %% pg.52
+         g4( as as) 
+      } \\
+      {
+         g=4-- g-- g-- f4.( e8) |
+         %% pg.52
+         f4( f) f
+      }
+   >>
+   r2 r4 | R1.*2 |
+   %% S
+   g=4-.\p a-. bes~ bes a8([ bes)] a[ g] |
+   f4-. g-. as~\> as2\! r4 |
+   f4-. g-. as~ as g8([ as)] g[ f] |
+   es4-.\< f-. ges~ ges f8([ g)] f[ es] |
+   %% pg.53
+   d1.~\mf | d4 r r r2 r4 | R1. |
+   c1.~\mp | c1.~ | c4 r r r2 r4 |
+   %% pg.54
+   R1. |
+   c'!='2.~(\fz\> c2 dis,4)\! |
+   bes'2.~(\> bes2\! e,4) |
+   bes'2(\> d,4\cresc)  b'2\>( e,4)\! |
+   c'2(\> dis,4)\! b'2(\> e,4\!) |
+   bes'4(\> d,)\! b'(\> e,)\! bes'(\> d,\!)
+   %% T
+   \key c \minor
+   <<
+      {
+         bes'=2.\pocoF~( bes2 g4 |
+         %% pg.55
+         es2.~ es4) r bes( |
+         g8 bes es g bes4~ bes) as8( bes as g |
+         f2.~) f2 r4 |
+         f4:8\mf es:8 \repeat unfold 5 { f:8 es:8 } |
+         f:8 d:8 f:8 d:8 f:8 d:8 |
+         g:8 es:8\< g:8 es:8 g:8 es:8\! |
+         des'2.~ des4 ces8( des ces bes |
+         %% pg.56
+         ces1.)~\> | ces2\!
+      } \\
+      {
+         es,=1.~ |
+         %% pg.55
+         es2.~ es4 r bes( |
+         g4 bes8 es g4~ g) f8( g f es |
+         es2.)~ es2 r4 |
+         \repeat unfold 6 { es4:8 f:8 } |
+         \repeat unfold 3 { d4:8 f:8 } |
+         \repeat unfold 3 { es4:8 g:8 } |
+         bes2.~ bes4 as8( bes as g |
+         %% pg.56
+         as1.)~ | as2
+      }
+   >>
+   r4 r2 r4 | R1. |
+   <<
+      {
+         as,=,2.^\pizz\< bes |
+         c!2.\! bes\> |
+         as2. bes\! | r2 r4 bes2. |
+         des'='2.^\arco\mf\<~ des4 ces8\!( des ces bes |
+         %% pg.57
+         ces2.~ ces4) r r |
+         fes,1.^\pizz | es1. |
+      } \\
+      {
+         f,=,2. g | as2. g | f2. g | r2 r4 bes2. |
+         bes'=2.~ bes4 as8( bes as g |
+         %% pg.57
+         as2.~ as4) r r |
+         des,2. << { ges2. | ces,1. } \\ {  s2.\< | s2. s\! } >> |
+      }
+   >>
+   %% U
+   bes'=2.\f\<~(^\arco bes2 g4)\! |
+   bes4 g8 f es4~ es2\> bes4 |
+   g8(\< bes es g bes4\!~ bes2\> g4)\! |
+   \clef tenor
+   <<
+      {
+         es'='4:8\! bes:8\cresc es:8\! g:8 es:8 g:8 |
+         %% pg.58
+         bes4:8 g:8 bes:8 es:8 bes:8 es:8
+      } \\
+      {
+         es,,=4:8 bes:8 es:8 g:8 es:8 g:8 |
+         %% pg.58
+         bes4:8 g:8 bes:8 es:8 bes:8 es:8
+      }
+   >> |
+   R1.*7 |
+   \clef bass
+   r4 ges,=\ff ges ges4 ges ges |
+   %% pg.59
+   ges4 ges ges ges ces,4~ ces8 r8 \breathe |
+   %% Vivace
+   R1.*3 |
+   <<
+      {
+         \repeat tremolo 3 { bes'=8\mf( a } bes8 a bes a bes4) |
+      } \\
+      {
+         \repeat tremolo 3 { ges=8( f } ges8 f ges f ges4) |
+      } \\
+      {
+         \repeat tremolo 3 { c,!=8( b } c8 b c b c4) |
+      }
+   >>
+   R1.*2 |
+   %% pg.60
+   <<
+      {
+         \repeat tremolo 3 { bes'=8_\dolce( a }
+         \repeat tremolo 2 { bes8 a }
+         bes4) |
+      } \\
+      {
+         \repeat tremolo 3 { ges=8( f }
+         \repeat tremolo 2 { ges8 f }
+         ges4) |
+      } \\
+      {
+         \repeat tremolo 3 { c,=8( b }
+         \repeat tremolo 2 { c8 b }
+         c4) |
+      }
+   >>
+   R1.*3 |
+   <<
+      {
+         \repeat tremolo 3 { bes'=8\mf( a }
+         \repeat tremolo 2 { bes8 a }
+         bes4) |
+      } \\
+      {
+         \repeat tremolo 3 { ges=8( f }
+         \repeat tremolo 2 { ges8 f }
+         ges4) |
+      } \\
+      {
+         \repeat tremolo 3 { c,=8( b }
+         \repeat tremolo 2 { c8 b }
+         c4) |
+      }
+   >>
+   R1.*2 |
+   %% pg.61
+   %% V
+   R1.*6 |
+   \clef tenor
+   <<
+      {
+         \repeat tremolo 3 { g''='8_\mf( fis }
+         \repeat tremolo 2 { g8 fis }
+         g4) |
+      } \\
+      {
+         \repeat tremolo 3 { es='8( d }
+         \repeat tremolo 2 { es8 d }
+         es4) |
+      } \\
+      {
+         \repeat tremolo 3 { bes=8( a }
+         \repeat tremolo 2 { bes8 a }
+         bes4) |
+      } \\
+      {
+         \repeat tremolo 3 { g=8( fis }
+         \repeat tremolo 2 { g8 fis }
+         g4) |
+      }
+   >>
+   %% pg.62
    
-   %% Continue with Scan 025
+   %% Continue with Scan 031
    
 }
 
