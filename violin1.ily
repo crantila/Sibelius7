@@ -182,7 +182,7 @@ violinOneSymph = \relative c'
     } \\
     {
       \voiceTwo
-      g='8\( c es g\) r8 r4  |
+      g,='8\( c es g\) r8 r4  |
       r4 gis,=' \justAfterF
       
       % pg.15
@@ -226,7 +226,7 @@ violinOneSymph = \relative c'
     } \\
     {
       \voiceTwo
-      gis='8( cis e gis!4.) r8  |
+      gis,,='8( cis e gis!4.) r8  |
       
       % pg.18
       r4 cis,2 cis cis4~  |
@@ -264,4 +264,93 @@ violinOneSymph = \relative c'
   R1.*2  |
   
   % pg.22
+  R1.  |
+  r2 r4 r2 d,=''4  |
+  es4 es d c c b  |
+  bes!4 a r r2 r4  |
+  R1.  |
+  r2 r4 r2 g'4(  |
+  bes4) as-. es-. ces-. bes-. as-.  |
+  g4 r r r2
+  <<
+    {
+      \voiceOne
+      bis'=''4(  |
+      % pg.23
+      dis4) cis gis
+    } \\
+    {
+      \voiceTwo
+      bis,='4(  |
+      % pg.23
+      dis4) cis gis
+    }
+  >>
+  e'4 dis cis  |
+  b4 ais cis eis gis fisis  |
+  b4
+  <<
+    {
+      \voiceOne
+      ais=''4 b dis cis dis(  |
+      fis4) e b
+    } \\
+    {
+      \voiceTwo
+      ais,='4 b dis cis dis(  |
+      fis4) e b
+    }
+  >>
+  g'='' fis e  |
+  \grace { es!16->( f } es4) d f as c b  |
+  es4 d es g f g  |
+  
+  % pg.23 (system break)
+  R1.  |
+  r4 d,,=' c d4 c d  |
+  es4 es f g4 a bes  |
+  <<
+    {
+      \voiceOne
+      c=''4 bes c d4 f bes  |
+    } \\
+    {
+      \voiceTwo
+      c,=''4 bes c bes4 c d  |
+    }
+  >>
+  R1.  |
+  r4 f,=' es f4 es f  |
+  ges4 ges as bes4 c! des  |
+  
+  % pg.24
+  <<
+    {
+      \voiceOne
+      es=''4 des es f4 as! des  |
+    } \\
+    {
+      \voiceTwo
+      es,=''4 des es des4 es f  |
+    }
+  >>
+  R1.  |
+  r4 g='' as g4 as g  |
+  as4 r r r2 r4  |
+  r4 d, es d4 es d~  |
+  d4 c c c4 es g  |
+  bes4 as g as4 bes c(  |
+  es4) des as fes4 es des  |
+  
+  % pg.25
+  c4 r r r2 r4  |
+  r4 as g as4 g c(  |
+  es4) des as fes4 es des  |
+  c4 r r r2 r4  |
+  R1.  |
+  r4 f as ces4 es d  |
+  ges4 f ges bes4 as bes  |
+  R1.  |
+  
+  % pg.26
 }
