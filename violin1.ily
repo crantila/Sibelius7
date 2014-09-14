@@ -353,4 +353,71 @@ violinOneSymph = \relative c'
    R1.  |
 
    % pg.26
+   \grace { bes,16( c } bes4) a c es4 g fis  |
+   bes4 a bes d4 c d  |
+   R1.  |
+   r4 a, g a4 g a  |
+   bes4 bes c d4 e f  |
+   <<
+      {
+         \voiceOne
+         g=''4 f g a4 c f  |
+      } \\
+      {
+         \voiceTwo
+         e,=''4 d e f4 g a  |
+      }
+   >>
+   R1.  |
+   r4 c,='' bes c4 bes c  |
+
+   % pg.27
+   des4 des es f4 g as  |
+   <<
+      {
+         \voiceOne
+         bes=''4 as bes c4 es as  |
+      } \\
+      {
+         \voiceTwo
+         ges,=''4 f ges as4 bes c  |
+      }
+   >>
+   R1.  |
+   r4 d es d4 es d  |
+   es4 r r r2 r4  |
+   r4 a, bes a4 bes a8( a)  |
+   a4 g g g4 bes d  |
+
+   % pg.28
+   f4 es d es4 f g(  |
+   bes4) as es ces4 bes as  |
+   g4 r r r2 r4  |
+   r2 r4 r2 g4(  |
+   bes4) as es ces4 bes as  |
+   g4 r r r2 r4  |
+   r2 r4 r2 g4(  |
+   bes) as es ces4 bes as  |
+
+   % pg.29
+   \slurUp
+   \phrasingSlurDown
+   g4 as(\( g as4 a bes  |
+   b4 c b c4 cis d\)  |
+   es4\( d es d4 es e)  |
+   f4( e f e4 es d\)  |
+   es4\( d es d4 des c)  |
+   ces4( bes ces bes4 a as\)  |
+   g4\( as g as4 a bes)  |
+   b4( c b c4 cis d\)  |
+   es4\( d es d4 es e)  |
+   f4( e f e4 es d\)  |
+   es4\( d es d4 des c)  |
+   ces4( bes ces bes4 a as\)  |
+   \time 3/2
+   \tuplet 6/4 { g8\( as g as8 a bes) } \tuplet 6/4 { b8( c b c8 cis d\) } \tuplet 6/4 { es8\( d es d es e) }  |
+
+   % pg.30
+
+   % NB: remember to set the slurs back to "auto"
 }
